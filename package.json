@@ -1,0 +1,39 @@
+{
+  "name": "@genaumann/semantic-release-next-sitemap",
+  "version": "0.0.2",
+  "description": "A semantic-release plugin for automatically generating and updating your `sitemap.xml` with fresh `lastmod` dates, based on commit messages and dynamic site structure.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/genaumann/semnatic-release-next-sitemap.git"
+  },
+  "keywords": [
+    "sitemap",
+    "semantic-release",
+    "plugin",
+    "xml",
+    "typescript",
+    "next.js"
+  ],
+  "author": "Gino Naumann",
+  "license": "MIT",
+  "packageManager": "pnpm@10.12.2",
+  "devDependencies": {
+    "@types/node": "^24.0.3",
+    "@types/xml2js": "^0.4.14",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "esbuild": "^0.25.5",
+    "xml2js": "^0.6.2"
+  }
+}
