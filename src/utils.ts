@@ -38,7 +38,10 @@ export async function getSitemap(lib: string) {
     acc[entry.url] = {
       changeFrequency: entry.changeFrequency,
       priority: entry.priority,
-      alternates: entry.alternates
+      alternates: entry.alternates,
+      lastModified: entry.lastModified
+        ? new Date(entry.lastModified)
+        : undefined
     }
     return acc
   }, {} as SitemapMapping)
@@ -94,6 +97,7 @@ export function updateSitemapWithDates(
     acc[url] = {...data}
 
     for (const {regex, date} of patterns) {
+      if (data.lastModified) continue // skip if lastmod in sitemap.ts is already set
       if (regex.test(url)) {
         acc[url].lastModified = date
         break
