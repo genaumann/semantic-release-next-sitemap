@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.2](https://github.com/genaumann/semantic-release-next-sitemap/compare/v1.0.1...v1.0.2) (2025-06-23)
+
+### 🐛 Bugfix 🐛
+
+* ci build and upload ([87fd849](https://github.com/genaumann/semantic-release-next-sitemap/commit/87fd849d13ca58b1178eb21a6bfc254ad27a0c83))
+
 ## [1.0.1](https://github.com/genaumann/semantic-release-next-sitemap/compare/v1.0.0...v1.0.1) (2025-06-23)
 
 ### 🐛 Bugfix 🐛
