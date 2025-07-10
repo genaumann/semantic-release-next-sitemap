@@ -14,6 +14,7 @@ export type Context = {
 export type PluginConfig = {
   sitemapPath: string
   sitemapFunction: string
+  sitemapBaseUrl: string
 }
 
 type Restriction = {

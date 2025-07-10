@@ -16,7 +16,8 @@ const plugin = {
 
     const finalSitemap = await mergeSitemapWithXml(
       updatedSitemap,
-      pluginConfig.sitemapPath
+      pluginConfig.sitemapPath,
+      pluginConfig.sitemapBaseUrl
     )
 
     convertToXmlSitemap(finalSitemap, pluginConfig.sitemapPath)

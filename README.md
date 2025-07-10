@@ -53,7 +53,8 @@ module.exports = {
       'semantic-release-sitemap-plugin',
       {
         sitemapFunction: 'lib/generateSitemap.ts',    // Path to your generator (TS)
-        sitemapPath: 'app/sitemap.xml'              // Path to your current sitemap.xml
+        sitemapPath: 'app/sitemap.xml',              // Path to your current sitemap.xml
+        sitemapBaseUrl: 'https://example.com'       // Prod Domain for absolute URLs
       },
       '@semantic-release/git',
        {

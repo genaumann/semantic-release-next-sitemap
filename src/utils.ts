@@ -49,7 +49,8 @@ export async function getSitemap(lib: string) {
 
 export async function mergeSitemapWithXml(
   updatedSitemap: SitemapMapping,
-  xmlPath: string
+  xmlPath: string,
+  baseUrl: string
 ) {
   const xmlContent = await readXMLFile(xmlPath)
 
@@ -59,7 +60,7 @@ export async function mergeSitemapWithXml(
     if (!entry.loc) return
     const loc = entry.loc[0]
     const path = loc.replace(/^https?:\/\/[^\/]+/, '')
-    urlMap[path] = loc
+    urlMap[path] = baseUrl + path
     if (entry.lastmod) {
       existingData[path] = new Date(entry.lastmod[0])
     }
@@ -68,7 +69,7 @@ export async function mergeSitemapWithXml(
   return Object.entries(updatedSitemap).reduce((acc, [path, data]) => {
     acc[path] = {
       ...data,
-      url: urlMap[path],
+      url: urlMap[path] || baseUrl + path,
       lastModified: data.lastModified || existingData[path]
     }
     return acc
