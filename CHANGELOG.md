@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.0.0](https://github.com/genaumann/semantic-release-next-sitemap/compare/v1.0.2...v2.0.0) (2025-07-10)
+
+### ⚠ BREAKING CHANGES
+
+* sitemapBaseUrl is required in config
+
+### 🐛 Bugfix 🐛
+
+* add baseUrl config ([b3a9996](https://github.com/genaumann/semantic-release-next-sitemap/commit/b3a99964f6cc3a2fd6d7be599ed240c56079d293))
+
 ## [1.0.2](https://github.com/genaumann/semantic-release-next-sitemap/compare/v1.0.1...v1.0.2) (2025-06-23)
 
 ### 🐛 Bugfix 🐛

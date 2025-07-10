@@ -1,6 +1,6 @@
 {
   "name": "@genaumann/semantic-release-next-sitemap",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "A semantic-release plugin for automatically generating and updating your `sitemap.xml` with fresh `lastmod` dates, based on commit messages and dynamic site structure.",
   "type": "module",
   "main": "dist/index.js",
